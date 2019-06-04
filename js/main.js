@@ -499,7 +499,7 @@ var isIncompatible = {
 };
 
 'serviceWorker' in navigator &&
-    navigator.serviceWorker.register('../service-worker.js').then(function(e) {
+    navigator.serviceWorker.register('./service-worker.js').then(function(e) {
        console.log(
            'ServiceWorker registration successful with scope: ', e.scope)
     })['catch'](function(e) {
